@@ -1,0 +1,473 @@
+/* Basis styles */
+
+
+body{
+
+      color: black;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: arial;
+
+
+
+/*
+  max-width: 1200px;
+  margin: 0 auto;
+*/
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 2em;
+    text-align: center;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+
+/* Navigation */
+nav a:hover{
+    color: #ea8777;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+
+}
+nav ul li {
+    position: relative;
+    padding-right: 2em;
+
+}
+
+.dropdown > ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    padding: 1em;
+}
+.dropdown > ul li{
+    white-space: nowrap;
+    padding: 0 2em;
+}
+
+.dropdown:hover > ul {
+    display: block;
+}
+
+#sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#top img {
+    width: 500px;
+    height: 650px;
+}
+#top p {
+    width: 750px;
+}
+
+
+footer{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+/*FORSIDE NAV*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+/*    background-color: rgb(37, 41, 50);*/
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    color: #818181;
+    display: block;
+
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 8px 8px 8px 32px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.sidenav.show {
+    width: 300px;
+}
+
+.menubutton {
+    position: absolute;
+    top: 0;
+    padding-left: 10px;
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ea8777;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.forsidelogo {
+    justify-content: center;
+    display: flex;
+}
+
+.forsidelogo img {
+    width: 60vw;
+    height: 40vw;
+    margin-bottom: 100px;
+}
+/* CV */
+
+#cv_about .sectionwrapper{
+    text-align: center;
+}
+
+#cv_about .cv_me{
+    flex-basis: 500px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.cv_me p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+
+.cv_work p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.mig img {
+    margin-top: 100px;
+}
+
+
+/* KEA APP */
+.keaapp {
+    display: flex;
+    justify-content: center;
+}
+
+.keaapp img {
+    width: 55vw;
+    height: 35vw;
+}
+
+.opgavekea {
+    display: flex;
+    justify-content: center;
+}
+.opgavekea img {
+    width: 55vw;
+    height: 35vw;
+}
+.loesningerkea {
+    display: flex;
+    justify-content: center;
+}
+
+.loesningerkea img {
+    width: 55vw;
+    height: 35vw;
+}
+
+#keaprototype iframe{
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+/* JOE APP */
+
+#joeprototype iframe{
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.joetegning {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.joetegning img {
+    width: 55vw;
+    height: 35vw;
+}
+
+.joetegning2 {
+    display: flex;
+    justify-content: center;
+}
+
+.joetegning2 img {
+    width: 55vw;
+    height: 35vw;
+
+}
+
+/* CPH DOX */
+
+.cphdox {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/* RE DESIGN */
+
+.redesign {
+    align-items: center;
+}
+
+.mishaforsidegammel {
+    display: flex;
+   justify-content: center;
+
+}
+
+.mishaforsidegammel img {
+    width: 55vw;
+    height: 35vw;
+}
+
+
+.mishaforsideny img {
+    width: 55vw;
+    height: 35vw;
+
+}
+
+.mishaforsideny {
+    display: flex;
+   justify-content: center;
+
+}
+
+.mishadesigngammel {
+    display: flex;
+   justify-content: center;
+
+}
+.mishadesigngammel img {
+    width: 55vw;
+    height: 35vw;
+    margin-bottom: 50px;
+
+}
+
+.mishadesignny img {
+    width: 55vw;
+    height: 35vw;
+
+}
+.mishadesignny {
+    display: flex;
+   justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+
+/* MISHA VIDEO */
+
+.mishayoutube {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/* ANIMATION */
+
+.animationtegning {
+    justify-content: center;
+    display: flex;
+}
+.animationtegning img {
+    width: 55vw;
+    height: 35vw;
+    margin-bottom: 10px;
+}
+
+.animationillustrator {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+.animationillustrator img {
+    width: 55vw;
+    height: 35vw;
+
+}
+
+.animation {
+    justify-content: center;
+    display: flex;
+}
+.animation img {
+    width: 55vw;
+    height: 35vw;
+}
+
+.animationnudes {
+    justify-content: center;
+    display: flex;
+}
+.animationnudes img {
+    width: 55vw;
+    height: 35vw;
+    margin-bottom: 10px;
+}
+
+.animationvidstedu {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.animationvidstedu img {
+    width: 55vw;
+    height: 35vw;
+}
+
+.animationbord {
+    justify-content: center;
+    display: flex;
+}
+.animationbord  img {
+    width: 55vw;
+    height: 35vw;
+    margin-bottom: 100px;
+}
+/* FLAT DESIGN */
+
+.flatdesign {
+    justify-content: center;
+    display: flex;
+}
+.flatdesign img {
+    width: 55vw;
+    height: 35vw;
+   margin-bottom: 10px;
+}
+
+.flatdesigninfo {
+    justify-content: center;
+    display: flex;
+}
+.flatdesigninfo img {
+    width: 55vw;
+    height: 35vw;
+   margin-bottom: 10px;
+}
+.stilart {
+    justify-content: center;
+    display: flex;
+}
+.stilart img {
+    width: 55vw;
+    height: 35vw;
+    margin-bottom: 100px;
+}
+
+.moodboard {
+    justify-content: center;
+    display: flex;
+}
+
+.moodboard img {
+    width: 55vw;
+    height: 100vw;
+    margin-bottom: 100px;
+}
